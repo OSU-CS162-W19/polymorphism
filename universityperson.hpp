@@ -8,10 +8,10 @@ private:
 public:
   UniversityPerson();
   UniversityPerson(std::string name, int id);
-  ~UniversityPerson();
+  virtual ~UniversityPerson();
   std::string get_name();
   int get_id();
-  void print();
+  virtual void print();
 };
 
 

@@ -9,11 +9,11 @@ private:
   float pay_rate;
 public:
   Employee(std::string name, int id, std::string title, float pay_rate);
-  ~Employee();
+  virtual ~Employee();
   std::string get_title();
   float get_pay_rate();
-  float get_monthly_pay(float hours_worked);
-  void print();
+  virtual float get_monthly_pay(float hours_worked);
+  virtual void print();
 
   friend void give_raise(Employee& employee, float percent_raise);
 };
