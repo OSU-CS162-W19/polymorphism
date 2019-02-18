@@ -4,6 +4,7 @@
 #include "universityperson.hpp"
 #include "employee.hpp"
 #include "instructor.hpp"
+#include "shape.hpp"
 
 Employee* get_employee(int n) {
   if (rand() % 2) {
@@ -54,5 +55,12 @@ int main(int argc, char const *argv[]) {
   // }
 
   std::cout << std::endl;
+
+  /*
+   * The below line is a compile-time error.  We can't instantiate a Shape object
+   * because Shape is an abstract class.
+   */
+  // Shape* s = new Shape;
+
   return 0;
 }

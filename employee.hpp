@@ -13,7 +13,7 @@ public:
   std::string get_title();
   float get_pay_rate();
   virtual float get_monthly_pay(float hours_worked);
-  virtual void print();
+  void print();
 
   friend void give_raise(Employee& employee, float percent_raise);
 };
